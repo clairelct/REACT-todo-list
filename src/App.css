@@ -1,1 +1,102 @@
-/* Other rules */
+/* COMMON RULES */
+:root {
+  --purple: #5c48d3;
+}
+body,
+input {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  font-weight: lighter;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+.container {
+  width: 35%;
+  margin: 40px auto;
+}
+.trash-icon {
+  color: var(--purple);
+}
+.bold {
+  font-weight: bold;
+}
+
+/* HEADER */
+header {
+  border-bottom: 1px solid #ededed;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  color: var(--purple);
+  font-size: 50px;
+  margin-right: 30px;
+}
+h1 {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+/* FORM */
+form {
+  display: flex;
+  justify-content: center;
+}
+form input {
+  border-radius: 5px;
+  padding: 10px 12px;
+  border: 1px solid var(--purple);
+  outline: none;
+}
+form input[type="text"] {
+  flex: 1;
+  background-color: #f2f7fd;
+  margin-right: 30px;
+}
+form input[type="text"]::placeholder {
+  color: grey;
+}
+form input[type="submit"] {
+  background-color: var(--purple);
+  cursor: pointer;
+  color: #ffffff;
+  transition: all 250ms ease-in-out;
+}
+form input[type="submit"]:hover {
+  background-color: #ffffff;
+  color: var(--purple);
+}
+
+/* TASKS LIST */
+.list-container {
+  height: 40vh;
+  padding: 25px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.list-container li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f6f5f5;
+  padding: 8px 0;
+}
+.list-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--purple);
+  font-size: 14px;
+  padding: 40px 0;
+}
